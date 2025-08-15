@@ -7,6 +7,12 @@
 html{
     font-size: 62.5%;
     font-family: "Tiro Bangla", serif;
+    background-color: #FFF6EA;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .header{
@@ -30,10 +36,6 @@ html{
     margin: 0px 0px 0px 20px;
 }
 
-nav {
-    justify-content: left;
-}
-
 li {
     display: inline;
     list-style-type: none;
@@ -49,9 +51,6 @@ li {
     transition: color 0.3s;
 }
 
-.list-nav li:hover {
-    color: #555; /* Cambio de color al hover */
-}
 
 /*Section-1*/
 
@@ -88,6 +87,7 @@ li {
 .introduction h1,
 .introduction img,
 .cuadro,
+.introduction button,
 .introduction .text-welcome {
     position: relative;
     z-index: 2;
@@ -137,23 +137,97 @@ li {
     height: auto;
 }
 
-
-/*Section-2*/
-.welcome{
+.introduction div{
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    gap: 80px;
+}
+
+.introduction button{
+    font-family: "Tiro Bangla", serif;
+    color: white;
+    background-color: #E0B279;
+    border: none;
+    border-radius: 30px;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/*Section-2*/
+
+.features {
+    position: relative; /* Mantiene el flujo del documento */
+    z-index: 10; /* Asegura que esté por encima */
+    background-color: #E0B279;
+    padding: 15px;
+    width: 80%; /* Ancho del contenedor */
+    margin: -50px auto 0; /* Margen negativo para superponer */
+    border-radius: 8px; /* Bordes redondeados (opcional) */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para efecto elevado */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para responsividad */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.features div {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 15px;
+    color: white;
+    min-width: 150px; /* Evita que se compriman demasiado */
+    flex: 1; /* Distribución equitativa del espacio */
+}
+
+/*Section-3*/
+
+.welcome{
+    text-align: center;
     height: 700px; /* Altura completa de la pantalla */
     width: 100%;
-    background-color: #FFF6EA;
+
 }
-.welcome h1{
+.title-welcome{
     font-family: "Passions Conflict", cursive;
     font-weight: 400;
     font-style: normal;
+    margin-top: 10px;
     font-size: 5rem;
 }
-/*Section-3*/
+
+.welcome h2 {
+    font-size: 2.8rem;
+    padding-bottom: 30px;
+}
+
+.welcome-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 90%;
+    margin-left: 100px;
+}
+
+.welcome img{
+    width: 50%;
+    border-radius: 15px;
+}
+
+.welcome-text{
+    width: 50%;
+    margin-right: 100px;
+}
+
+.welcome-text p {
+    text-align: justify;
+    font-size: 2rem;
+}
 /*Section-4*/
+
 /*Section-5*/
 /*Section-6*/
 /*Section-7*/
+/*Section-8*/
