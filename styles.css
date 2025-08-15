@@ -7,6 +7,8 @@
 html{
     font-size: 62.5%;
     font-family: "Tiro Bangla", serif;
+    font-weight: 100;
+    font-style: normal;
     background-color: #FFF6EA;
 }
 
@@ -185,21 +187,21 @@ li {
 
 .welcome{
     text-align: center;
-    height: 700px; /* Altura completa de la pantalla */
+    height: 800px; /* Altura completa de la pantalla */
     width: 100%;
-
 }
+
 .title-welcome{
     font-family: "Passions Conflict", cursive;
     font-weight: 400;
     font-style: normal;
-    margin-top: 10px;
+    margin-top: 20px;
     font-size: 5rem;
 }
 
 .welcome h2 {
     font-size: 2.8rem;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .welcome-content{
@@ -208,12 +210,14 @@ li {
     align-items: center;
     gap: 20px;
     max-width: 90%;
+    max-height: 700px;
     margin-left: 100px;
 }
 
 .welcome img{
     width: 50%;
     border-radius: 15px;
+    
 }
 
 .welcome-text{
@@ -222,12 +226,80 @@ li {
 }
 
 .welcome-text p {
+    display: block;
     text-align: justify;
-    font-size: 2rem;
+    font-size: 1vw;
 }
+
+
 /*Section-4*/
 
+.higlights{
+    display: flex;
+    height: 900px; /* Altura completa de la pantalla */
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+}
+.title-higlights{
+    font-family: "Passions Conflict", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 10px;
+    font-size: 5rem;
+}
+
+.higlights h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.higlights img{
+    width: 80%;
+
+    border-radius: 15px;
+}
+
 /*Section-5*/
+
+.cards {
+    position: relative; /* Mantiene el flujo del documento */
+    z-index: 10; /* Asegura que esté por encima */
+    background-color: #FFF6EA;
+    padding: 15px;
+    width: 40%; /* Ancho del contenedor */
+    margin: -250px auto 0; /* Margen negativo para superponer */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para efecto elevado */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para responsividad */
+    gap: 20px; /* Espacio entre elementos */
+    opacity: 90%;
+}
+
+.cards div {
+    text-align: center;
+    padding: 15px;
+    min-width: 150px; /* Evita que se compriman demasiado */
+    flex: 1; /* Distribución equitativa del espacio */
+}
+.cards div p::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: #E0B279;
+    margin: 10px auto;
+}
+.cards div h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.cards div p {
+    font-size: 1.5rem;
+}
 /*Section-6*/
 /*Section-7*/
 /*Section-8*/
