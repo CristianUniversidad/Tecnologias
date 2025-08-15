@@ -18,6 +18,12 @@ html{
     min-width: 320px;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 .logo img{
     width: 255px;
     height: 123px;
@@ -36,18 +42,74 @@ li {
     font-size: 1.2rem;
 }
 
+.list-nav li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.list-nav li:hover {
+    color: #555; /* Cambio de color al hover */
+}
+
 /*Section-1*/
 
 .introduction {
     display: flex;
-    flex-direction: column; /* Si quieres que se apilen */
-    align-items: center;    /* Centra horizontalmente */
-    justify-content: center; /* Centra verticalmente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    min-width: 100vw;
+    height: 700px; /* Altura completa de la pantalla */
+    width: 100%;
+    background-image: url('./img/Lobby1.jpg');
+    background-size: cover; /* Cubre todo el espacio disponible */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-attachment: fixed; /* Efecto parallax (opcional) */
+    position: relative;
+    padding: 20px;
 }
 
-h1{
+/* Capa oscura semitransparente para mejorar legibilidad del texto */
+.introduction::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Ajusta el último valor (0.4) para más/menos oscuridad */
+    z-index: 1;
+}
+
+/* Asegurarnos que el contenido esté sobre la capa oscura */
+.introduction h1,
+.introduction img,
+.cuadro,
+.introduction .text-welcome {
+    position: relative;
+    z-index: 2;
+}
+
+.text-welcome {
+    margin-top: 30px;
+    font-size: clamp(2rem, 5vw, 4rem);
+    color: white;
+    text-align: center;
+    max-width: 600px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+}
+
+.introduction img {
+    margin-top: 30px;
+    width: 255px;
+    height: auto; /* Mantiene la proporción */
+}
+
+.introduction h1{
+    color: white;
     padding: 30px 0px 30px 0px ;
     font-size: 2.5rem;
     width: 140px;
@@ -62,8 +124,36 @@ h1{
 
 .text-welcome{
     margin-top: 30px;
-    font-size: 4rem;
+    font-size: clamp(2rem, 5vw, 4rem); /* Tamaño responsive */
+    color: white;
     text-align: center;
-    width: 600px;
-    height: 150px;
+    max-width: 600px;
+    padding: 0 20px; /* Para móviles */
 }
+
+.img_lobby{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+
+/*Section-2*/
+.welcome{
+    display: flex;
+    justify-content: center;
+    height: 700px; /* Altura completa de la pantalla */
+    width: 100%;
+    background-color: #FFF6EA;
+}
+.welcome h1{
+    font-family: "Passions Conflict", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+}
+/*Section-3*/
+/*Section-4*/
+/*Section-5*/
+/*Section-6*/
+/*Section-7*/
