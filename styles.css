@@ -450,6 +450,15 @@ li {
     margin-bottom: 10px;
 }
 
+.testimonials-cards img{
+    display: block; /* Asegura que el margin-left funcione */
+    width: 40px;
+    height: 15px;
+    margin-bottom: 10px;
+    margin-left: 0; /* Elimina cualquier margen izquierdo automático */
+    margin-right: auto; /* Empuja la imagen a la izquierda */
+}
+
 .testimonials-arrow {
     display: flex;
     justify-content: center;
