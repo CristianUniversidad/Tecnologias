@@ -300,6 +300,63 @@ li {
 .cards div p {
     font-size: 1.5rem;
 }
+
 /*Section-6*/
+
+.explore{
+    text-align: center;
+    height: 800px; /* Altura completa de la pantalla */
+    width: 100%;
+}
+
+.title-explore{
+    font-family: "Passions Conflict", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 20px;
+    font-size: 5rem;
+}
+
+.explore h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.explore-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 90%;
+    max-height: 700px;
+    margin-left: 100px;
+}
+
+.explore img{
+    width: 50%;
+    border-radius: 15px;
+    
+}
+
+.explore-text{
+    width: 50%;
+    margin-right: 100px;
+}
+
+.explore-text p {
+    display: block;
+    text-align: justify;
+    font-size: 1vw;
+}
+.explore button{
+    font-family: "Tiro Bangla", serif;
+    color: white;
+    background-color: #E0B279;
+    border: none;
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+}
 /*Section-7*/
 /*Section-8*/
