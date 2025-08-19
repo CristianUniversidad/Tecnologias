@@ -269,7 +269,7 @@ li {
     background-color: #FFF6EA;
     padding: 15px;
     width: 40%; /* Ancho del contenedor */
-    margin: -400px auto 0; /* Margen negativo para superponer */
+    margin: -250px auto 0; /* Margen negativo para superponer */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Sombra para efecto elevado */
     display: flex;
     justify-content: center;
