@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Tiro Bangla", serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #FFF6EA;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #BFAE9F;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 320px;
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.logo img{
+    width: 255px;
+    height: 123px;
+    margin: 0px 0px 0px 20px;
+}
+li {
+    display: inline;
+    list-style-type: none;
+    color: black;
+    margin: 0px 20px 0px 20px;
+    font-size: 1.2rem;
+}
+.list-nav li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.sobre-nosotros {
+    text-align: left;
+    height: 700px;
+    width: 100%;
+}
+.title-sobrenosotros{
+    font-size: 55px;
+    margin-left: 22%;
+    margin-top: 3%;
+    font-weight: normal;
+}
+.sobre-nosotros-content{
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    margin-left: 5%;
+}
+.sobre-nosotros img{
+    width: 50%;
+    border-radius: 30px;
+}
+.sobre-nosotros p{
+    font-size: 27px; 
+    text-align: justify;
+    margin-right: 5%;
+    
+}
+.mision-vision-valores{
+    text-align: center;
+    height: 800px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    gap: 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+.mision-vision-valores img{
+    margin-top: 2%;
+    height: auto; 
+    border-radius: 30px 0 0 30px;
+}
+.mision-vision-valores-izq{
+    margin-left: 5%;
+}
+.mision-vision-valores-izq p{
+    font-size: 24px;
+    width: 700px;
+    text-align: justify;
+}
+.mision-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+}
+.vision-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+}
+.valores-content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: auto;
+}
+.title-mision{
+    font-size: 55px;
+    background: #E0B279;
+    width: 180px;
+    margin-left: 10%;
+    margin: 10px;
+    margin-top: 50px;
+    font-weight: normal;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+.title-vision{
+    font-size: 55px;
+    background: #E0B279;
+    width: 180px;
+    margin-left: 10%;
+    margin: 10px;
+    font-weight: normal;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.title-valores{
+    font-size: 55px;
+    background: #E0B279;
+    width: 180px;
+    margin-left: 10%;
+    margin: 10px;
+    font-weight: normal;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.sede-colombia{
+    text-align: center;
+    height: 1700px;
+    width: 100%;
+    align-items: center;
+}
+.title-sede{
+    font-size: 96px;
+    font-weight: normal;
+    margin-top: 50px;
+}
+.title-colombia{
+    font-family: "Passions Conflict", cursive;
+    font-style: normal;
+    font-size: 128px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+.sede-colombia img{
+    width: 100%;
+}.sede-clombia-local{
+    background-color: white;
+}
+.sede-clombia-local h2{
+    padding: 50px;
+    font-size: 40px;
+    font-weight: normal;
+}
+.sede-clombia-local p{
+    font-size: 20px;
+}
+.sede-argentina{
+    text-align: center;
+    height: 1300px;
+    width: 100%;
+    align-items: center;
+}
+.title-sede-argentina {
+    font-family: "Passions Conflict", cursive;
+    font-style: normal;
+    font-size: 128px;
+    margin-top: 130px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+.sede-argentina img{
+    width: 100%;
+}
+.sede-argentina-local{
+    background-color: white;
+    height: 400px;
+}
+.sede-argentina-local h2{
+    padding: 50px;
+    font-size: 40px;
+    font-weight: normal;
+}
+.sede-argentina-local p{
+    font-size: 20px;
+}
+
+.sede-argentina div {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #fff;
+    color: #000;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #eee;
+    animation: fadeIn 1s ease-out;
+    margin-top: 200px;
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+
+  /* Columna de enlaces */
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  .footer-links ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-links h4,
+  .footer-newsletter h4,
+  .footer-social h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-links ul li {
+    margin-bottom: 8px;
+  }
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+  }
+  .footer-links ul li a:hover {
+    color: #666;
+  }
+
+  /* Centro */
+  .footer-center {
+    text-align: center;
+    max-width: 300px;
+    font-size: 14px;
+    margin-top: 60px;
+  }
+  .footer-center p {
+    margin: 8px 0;
+  }
+
+  /* Newsletter */
+  .footer-newsletter input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 200px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .footer-newsletter input:focus {
+    border-color: #E0B279;
+    box-shadow: 0 0 0 2px rgba(224, 178, 121, 0.2);
+  }
+
+  .footer-newsletter button {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  .footer-newsletter button:hover {
+    background: #333;
+    transform: translateY(-2px);
+  }
+
+  /* Redes */
+  .footer-social {
+    margin-top: 20px;
+  }
+  .footer-social a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="/css/booking.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Booking</h1>
+    <div class="booking-box">
+      
+      <!-- Calendario -->
+      <div class="calendar">
+        <div class="calendar-header">
+          <button id="prev">&lt;</button>
+          <span id="month-year"></span>
+          <button id="next">&gt;</button>
+        </div>
+        <div class="weekdays">
+          <span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span>
+        </div>
+        <div class="days" id="days"></div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="formulario">
+        <div class="input-box">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Name">
+        </div>
+        <div class="input-box">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email">
+        </div>
+        <div class="input-box">
+          <i class="fas fa-phone"></i>
+          <input type="tel" placeholder="Phone">
+        </div>
+        <h3>Habitaciones</h3>
+        <select>
+          <option>Seleccionar</option>
+          <option>1 Habitación</option>
+          <option>2 Habitaciones</option>
+          <option>3 Habitaciones</option>
+        </select>
+        <h3>Huespedes</h3>
+        <select>
+          <option>Seleccionar</option>
+          <option>1 Huésped</option>
+          <option>2 Huéspedes</option>
+          <option>3+ Huéspedes</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/booking.js"></script>
+</body>
+</html>
