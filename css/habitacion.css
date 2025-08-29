@@ -1,0 +1,183 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Tiro Bangla", serif;
+    font-weight: 100;
+    font-style: normal;
+    background-color: #FFF6EA;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #BFAE9F;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 320px;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img{
+    width: 255px;
+    height: 123px;
+    margin: 0px 0px 0px 20px;
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    color: black;
+    margin: 0px 20px 0px 20px;
+    font-size: 1.2rem;
+}
+
+.list-nav li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/*Tarjetas de habitaciones*/
+
+.room-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    min-width: 150px;
+    max-width: 1800px;
+}
+
+.contenedor-tarjeta {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.contenedor-tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.imagen-tarjeta {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Tarjeta que se despliega a la derecha */
+.derecha .imagen-tarjeta {
+    transform-origin: left;
+}
+
+.derecha:hover .imagen-tarjeta {
+    transform: translateX(50%);
+}
+
+.derecha .contenido-tarjeta {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.derecha:hover .contenido-tarjeta {
+    transform: translateX(0);
+}
+
+/* Tarjeta que se despliega a la izquierda */
+.izquierda .imagen-tarjeta {
+    transform-origin: right;
+}
+
+.izquierda:hover .imagen-tarjeta {
+    transform: translateX(-50%);
+}
+
+.izquierda .contenido-tarjeta {
+    right: 0;
+    transform: translateX(100%);
+}
+
+.izquierda:hover .contenido-tarjeta {
+    transform: translateX(0);
+}
+
+.contenido-tarjeta {
+    position: absolute;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.titulo-tarjeta {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: #2c3e50;
+}
+
+.parrafo-tarjeta {
+    font-size: 0.9rem;
+    color: #34495e;
+    line-height: 1.5;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.derecha .badge {
+    right: 15px;
+}
+
+.izquierda .badge {
+    left: 15px;
+}
+
+.derecha .numero {
+    left: 15px;
+}
+
+.izquierda .numero {
+    right: 15px;
+}
