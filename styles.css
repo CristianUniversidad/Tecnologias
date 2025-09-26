@@ -43,6 +43,10 @@ a{
     z-index: 100;
 }
 
+.header {
+    transition: transform 0.3s ease-in-out;
+}
+
 .logo img{
     width: 255px;
     height: 123px;
@@ -302,7 +306,7 @@ li {
 
 .welcome{
     text-align: center;
-    height: 800px; /* Altura completa de la pantalla */
+    height: auto; /* Altura completa de la pantalla */
     width: 100%;
 }
 
@@ -348,7 +352,7 @@ li {
 .welcome-text p {
     display: block;
     text-align: justify;
-    font-size: 1vw;
+    font-size: 2rem;
 }
 
 /*Section-4*/
@@ -447,7 +451,7 @@ li {
 }
 
 .explore h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin-bottom: 30px;
 }
 
@@ -479,13 +483,13 @@ li {
 .explore-text h1 {
     display: block;
     text-align: justify;
-    font-size: 2vw;
+    font-size: 2.5rem;
 }
 
 .explore-text p {
     display: block;
     text-align: justify;
-    font-size: 1vw;
+    font-size: 2rem;
 }
 .explore button{
     font-family: "Tiro Bangla", serif;
@@ -637,7 +641,7 @@ li {
 
 .enjoy{
     text-align: center;
-    height: 600px; /* Altura completa de la pantalla */
+    height: auto; /* Altura completa de la pantalla */
     width: 100%;
 }
 
@@ -963,3 +967,180 @@ footer {
       margin-bottom: 20px;
     }
   }
+
+/* 📲 TABLETS (máx. 1024px) */
+@media (max-width: 1024px) {
+    .list-nav li {
+        margin: 0 10px;
+        font-size: 1.4rem;
+    }
+
+    .welcome-content,
+    .explore-content {
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 30px;
+    }
+
+    .cards {
+        margin: -450px auto 0;
+    }
+
+    .welcome img,
+    .explore img {
+        width: 90%;
+    }
+
+    .welcome-text,
+    .explore-text {
+        width: 90%;
+        margin: 0 auto;
+    
+    }
+
+    .welcome-text p {
+        font-size: 1.4vw;
+    }
+
+    .explore-text p {
+        font-size: 1.4vw;
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
+
+    .event-card {
+        min-width: 90%;
+        max-width: 500px;
+    }
+
+    .enjoy-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .testimonials {
+        height: auto;
+        padding: 30px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+  /* 📱 CELULARES (máx. 600px) */
+@media (max-width: 600px) {
+  
+  .header {
+        flex-direction: column;       
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 180px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .list-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .introduction {
+        height: auto;
+        padding: 40px 20px;
+        background-attachment: scroll; /* mejora en móviles */
+    }
+
+    .introduction div {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features {
+        margin: -20px auto 0;
+    }
+
+    .explore {
+        height: auto;
+    }
+
+    .welcome-content,
+    .explore-content,
+    .enjoy-content {
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .welcome img,
+    .explore img,
+    .enjoy-content img {
+        width: 100%;
+        height: auto;
+    }
+
+    .welcome-text p {
+        font-size: 1.2rem;
+    }
+
+    .welcome-text,
+    .explore-text {
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+
+    .higlights{
+        height: 400px;
+    }
+
+    .explore-text h1 {
+        font-size: 2rem;
+    }
+
+    .explore-text p {
+        font-size: 1.2rem;
+    }
+
+    .cards {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .event-card {
+        min-width: 100%;
+    }
+
+    .testimonials {
+        height: auto;
+        padding: 20px;
+    }
+
+    .testimonials-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

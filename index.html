@@ -271,6 +271,24 @@
             checkScroll();
             window.addEventListener('scroll', checkScroll);
         });
+
+        let lastScrollTop = 0; // Posición anterior del scroll
+        const header = document.querySelector(".header");
+
+        window.addEventListener("scroll", function () {
+        let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll > lastScrollTop) {
+            // Desplazando hacia abajo -> ocultar header
+            header.style.transform = "translateY(-100%)";
+        } else {
+            // Desplazando hacia arriba -> mostrar header
+            header.style.transform = "translateY(0)";
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valores negativos
+        });
+
     </script>
 </body>
 </html>
